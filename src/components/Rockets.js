@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchRockets } from '../redux/rockets/rockets';
+import { fetchRockets, bookRockets } from '../redux/rockets/rockets';
 
 const Rockets = () => {
   const { rockets, status } = useSelector((state) => state.rockets);
@@ -12,14 +12,17 @@ const Rockets = () => {
     }
   }, [status, dispatch]);
 
+  const BookingHandler = (id) => {
+    dispatch(bookRockets(id));
+  };
+
   let content;
   if (status === 'pending') {
     content = <p>Loading...</p>;
   } else if (status === 'rejected') {
     content = <p>An error occured</p>;
   } else if (status === 'success') {
-    // eslint-disable-next-line react/self-closing-comp
-    content = <p></p>;
+    content = <p />;
   }
 
   return (
@@ -33,11 +36,13 @@ const Rockets = () => {
               <h3 className="rocketName">{rocket.rocket_name}</h3>
               <div className="rocketDesc">
                 <p>
-                  <span className="status">status</span>
-                  <span>{rocket.description}</span>
+                  {rocket.active && <span className="status">Reserved</span>}
+                  {rocket.description}
                 </p>
               </div>
-              <button type="submit">Reserve Rocket</button>
+              <button className={rocket.active ? 'cancel' : 'reserve'} id={rocket.id} type="submit" onClick={() => BookingHandler(rocket.id)}>
+                {rocket.active ? 'Cancel Reservations' : 'Reserve Rockets'}
+              </button>
             </div>
           </div>
         ))}
