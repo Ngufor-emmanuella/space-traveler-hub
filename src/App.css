@@ -51,11 +51,6 @@ img {
   margin: 4rem auto;
 }
 
-.container {
-  width: 80%;
-  margin: 4rem auto;
-}
-
 .rocketList {
   display: flex;
   flex-direction: column;
@@ -134,21 +129,8 @@ img {
   font-size: 15px;
 }
 
-profile {
-  width: 90%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-  margin: 3rem auto;
-  gap: 2em;
-}
-
 h1 {
   margin-bottom: 1rem;
-}
-
-.activeRockets :nth-child(even) {
-  background-color: #f2f2f2;
 }
 
 .activeRockets > ul > li {
