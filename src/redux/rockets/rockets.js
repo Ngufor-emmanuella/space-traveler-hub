@@ -50,6 +50,7 @@ const slice = createSlice({
         IsSucessful.status = 'success';
         IsSucessful.rockets = action.payload;
       })
+
       .addCase(fetchRockets.rejected, (state) => {
         const IsRejected = state;
         IsRejected.status = 'rejected';
