@@ -6,6 +6,7 @@ const Profile = () => (
   <div className="container">
     <MyProfile />
     <RocketsProfile />
+
   </div>
 );
 
