@@ -7,7 +7,7 @@
 }
 
 img {
-  max-width: 30%;
+  max-width: 10%;
   padding-bottom: 1rem;
 }
 
@@ -44,11 +44,6 @@ img {
 .active {
   padding-bottom: 0.35rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.container {
-  width: 80%;
-  margin: 4rem auto;
 }
 
 .container {
@@ -134,7 +129,8 @@ img {
   font-size: 15px;
 }
 
-profile {
+/* My Profile */
+.profile {
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -143,27 +139,30 @@ profile {
   gap: 2em;
 }
 
-h1 {
-  margin-bottom: 1rem;
+.activeRockets {
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
 }
 
-.activeRockets :nth-child(even) {
-  background-color: #f2f2f2;
+.activeRockets > ul {
+  padding-left: 0;
+  margin: 0;
 }
 
-.activeRockets > ul > li {
-  list-style: none;
-  font-size: 21px;
-  padding: 3px;
-  padding-left: 35px;
+.activeRockets > ul > li:last-child {
+  border-bottom: none;
 }
 
-.rockets td {
-  width: 74.3%;
-  padding-left: 2rem;
-  font-size: 1.5rem;
+.noReservations {
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  padding: 5px 0 30px 10px;
 }
 
 .reserveRocketsLink {
-  font-size: 1.5rem;
+  color: rgb(15, 43, 204);
+  font-size: 15px;
+  padding: 5px;
+  background-color: rgb(66, 66, 66, 0.7);
+  border-radius: 5px;
 }
