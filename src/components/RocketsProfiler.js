@@ -8,12 +8,14 @@ const RocketsProfile = () => {
   return (
     <div className="profile">
       <div className="rockets">
-        <h1>My Rockets</h1>
+        <h3>My Rockets</h3>
         {reservedRockets.length === 0 ? (
-          <table className="tour-now tour">
-            <td>No Reservations Made...</td>
-            <td><Link className="reserveRocketsLink" to="/">Make a Reservation</Link></td>
-          </table>
+          <div className="noReservations">
+            <p>No Reservations Made</p>
+            <Link className="reserveRocketsLink" to="/">
+              Make Reservations
+            </Link>
+          </div>
         ) : (
           <div className="activeRockets">
             <ul>

@@ -58,6 +58,7 @@ thead {
 }
 
 .active {
+  background-color: #0290ff;
   color: #fff;
   padding: 0.2rem;
   border-radius: 4px;
@@ -65,10 +66,14 @@ thead {
 }
 
 td.tour-now {
-  width: 80%;
+  width: 100%;
+}
+
+.head-text {
+  margin-bottom: 1rem;
 }
 
 tbody.tour_body td {
-  padding-left: 2rem;
+  padding: 1.5rem;
   font-size: 1.5rem;
 }

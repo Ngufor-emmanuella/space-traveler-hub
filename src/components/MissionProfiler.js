@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import './missions.css';
 
 const MyProfile = () => {
@@ -10,18 +9,9 @@ const MyProfile = () => {
       <h1 className="head-text">My Missions</h1>
       <table className="tour_list">
         <tbody className="tour_body">
-          {
-            tourists.length < 1 ? (
-              <tr>
-                <td className="tour-now tour">No Mission Yet...</td>
-                <td><Link to="/missions">Join a Mission</Link></td>
-              </tr>
-            ) : (
-              tourists.map(({ id, name }) => (
-                <tr className="tour" key={id}><td>{name}</td></tr>
-              ))
-            )
-          }
+          {tourists.map(({ id, name }) => (
+            <tr className="tour" key={id}>{name}</tr>
+          ))}
         </tbody>
       </table>
     </div>
