@@ -7,15 +7,15 @@ tbody.tour_body td {
   font-size: 1.5rem;
 }
 
-#tab td:nth-child(2) {
-  width: 60%;
-  padding: 20px;
-}
-
 #tab td:nth-child(3),
 #tab td:nth-child(4) {
   text-align: center;
   width: 15%;
+}
+
+#tab td:nth-child(2) {
+  width: 60%;
+  padding: 20px;
 }
 
 #tab tbody td:nth-child(1) {
