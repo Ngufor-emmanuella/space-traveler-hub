@@ -8,7 +8,6 @@ const RocketsProfile = () => {
   return (
     <div className="profile">
       <div className="rockets">
-
         <h1>My Rockets</h1>
         {reservedRockets.length === 0 ? (
           <table className="tour-now tour">
