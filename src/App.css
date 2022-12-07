@@ -2,17 +2,13 @@
   width: 100%;
   height: 5rem;
   justify-content: space-between;
-  padding: 5rem;
+  padding: 4.5rem;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 img {
-  max-width: 30%;
+  max-width: 20%;
   padding-bottom: 1rem;
-}
-
-.logo {
-  max-width: 15%;
 }
 
 .flex {
@@ -20,30 +16,16 @@ img {
   align-items: center;
 }
 
-.NavLinks {
-  display: flex;
-  list-style-type: none;
-  margin-right: 30px;
-}
-
-.NavLinks > li > a {
-  text-decoration: underline;
-}
-
-.activeRockets > ul > li {
+ul {
   list-style: none;
-  border-bottom: 1px solid rgb(197, 197, 197);
-  padding: 10px 0 15px 10px;
 }
 
-.NavLinks li:nth-of-type(2) {
-  border-right: 2px solid rgb(0, 0, 0);
-  padding-right: 1.5rem;
+a {
+  text-decoration: none;
 }
 
-.active {
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+.NavLinks {
+  gap: 1.5rem;
 }
 
 .container {
@@ -55,90 +37,48 @@ img {
   display: flex;
   flex-direction: column;
   gap: 44px;
-  padding: 5%;
+  margin-top: 44px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .rocketCard {
   display: flex;
   justify-content: flex-start;
-  width: 95%;
-  margin: auto;
-  border-radius: 8px;
   gap: 22px;
 }
 
-.rocketContent {
-  padding: 5%;
-}
-
-.rocketName {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.rocketDesc {
-  font-size: 18px;
-  text-align: justify;
-}
-
-.reserve {
-  background-color: rgb(40, 68, 193);
-  color: #fff;
-  border: none;
-  padding: 5px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  padding-top: 5px;
-}
-
-.cancel {
-  border: solid 1px rgb(128, 128, 128);
-  padding: 5px 16px;
-  border-radius: 5px;
-  color: rgb(128, 128, 128);
-  cursor: pointer;
-}
-
-.cancel:hover {
-  background-color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .rocketCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .rocket-img {
-    width: 90%;
-    border-radius: 20px;
-  }
-}
-
 .status {
-  background-color: rgb(72, 179, 221);
-  border-radius: 3px;
-  padding: 2px;
-  margin-right: 5px;
+  background-color: blue;
 }
 
-.description {
-  text-align: justify;
-  padding: 10px;
-  font-size: 15px;
+.missions {
+  margin: 50px;
+  text-align: left;
 }
 
-h1 {
-  margin-bottom: 1rem;
+.missions-table {
+  border: 1px solid;
 }
 
-.rockets td {
-  width: 74.3%;
-  padding-left: 2rem;
-  font-size: 1.5rem;
+tr {
+  width: 100%;
 }
 
-.reserveRocketsLink {
-  font-size: 1.5rem;
+td {
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(66, 65, 65);
+}
+
+table th {
+  padding: 15px;
 }

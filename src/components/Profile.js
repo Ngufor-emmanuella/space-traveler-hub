@@ -1,11 +1,12 @@
 import React from 'react';
-import MyProfile from './MissionProfiler';
-import RocketsProfile from './RocketsProfiler';
+/* import { Link } from 'react-router-dom'; */
 
 const Profile = () => (
   <div className="container">
-    <MyProfile />
-    <RocketsProfile />
+    {/* <div className="profile">
+      <Link>Make Reservations</Link>
+    </div> */}
+    <h1>Moving on...</h1>
   </div>
 );
 
