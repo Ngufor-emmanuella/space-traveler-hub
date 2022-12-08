@@ -98,7 +98,7 @@ In this project we did the following changes
 
 > Add a link to your deployed project.
 
-- [Live Demo Link]()
+- [Live Demo Link](https://splendid-kulfi-220214.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
