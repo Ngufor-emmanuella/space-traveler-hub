@@ -24,3 +24,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  display: inline-block;
+  text-decoration: underline;
+}
