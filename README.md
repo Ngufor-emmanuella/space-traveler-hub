@@ -1,37 +1,14 @@
 <<<<<<< HEAD
 <a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-<<<<<<< HEAD
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="https://user-images.githubusercontent.com/108806646/203941212-a33b97da-6d84-4649-b763-4e8191c24805.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>README</b></h3>
 
 </div>
+
 
 <!-- TABLE OF CONTENTS -->
 
@@ -218,6 +195,13 @@ Example:
 - GitHub: [@Ngufor-emmanuella](https://github.com/Ngufor-emmanuella)
 - Twitter: [@Ngufor-emmanuella](https://twitter.com/Ngufor-emmanuella)
 - LinkedIn: [Ngufor-emmanuella](https://linkedin.com/in/Ngufor-emmanuella)
+
+👤 **Nowembabazi Nickson**
+
+- GitHub: [@Nowembabazi](https://github.com/Nowembabazi)
+- Twitter: [@NowembabaziN](https://twitter.com/NowembabaziN)
+- LinkedIn: [nowembabazi-nickson](https://www.linkedin.com/in/nowembabazi-nickson/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
