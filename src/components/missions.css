@@ -2,7 +2,7 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-tbody.tour_body td {
+tbody.tour_all td {
   padding: 15px;
   font-size: 1.5rem;
 }
@@ -28,7 +28,7 @@ tbody.tour_body td {
   margin: 60px auto;
 }
 
-table.tour_list {
+table.touring {
   width: 100%;
 }
 
@@ -36,7 +36,7 @@ thead {
   text-align: left;
 }
 
-.join {
+.meet {
   padding: 5px 16px;
   background-color: transparent;
   border-color: rgb(48, 46, 46);
@@ -54,7 +54,7 @@ thead {
   color: red;
 }
 
-.non_member {
+.member {
   background-color: rgb(123, 122, 122);
   color: #fff;
   padding: 0.2rem;
@@ -62,13 +62,13 @@ thead {
   border: transparent;
 }
 
-.non_member.active {
+.member.active {
   color: #fff;
   padding: 0.2rem;
   border-radius: 4px;
   background-color: rgb(63, 115, 194);
 }
 
-td.tour-now {
+td.tour-first {
   width: 80%;
 }

@@ -11,7 +11,7 @@ const Mission = () => {
   }, [loading, dispatch]);
 
   if (loading) {
-    return <h1> Loading...</h1>;
+    return <h2> Loading...</h2>;
   }
 
   const jetclick = (id) => {
@@ -36,7 +36,7 @@ const Mission = () => {
             <td>{name}</td>
             <td>{description}</td>
             <td>
-              {mission ? <p className="non_member active">Active Member</p> : <p className="non_member">Not A Member</p>}
+              {mission ? <p className="member active">Active Member</p> : <p className="member">Not A Member</p>}
             </td>
             <td>
               {mission
@@ -46,7 +46,7 @@ const Mission = () => {
                       jetclick(id);
                     }}
                     type="button"
-                    className="join leave"
+                    className="joining"
                   >
                     Leave Mission
                   </button>
@@ -57,7 +57,7 @@ const Mission = () => {
                       jetclick(id);
                     }}
                     type="button"
-                    className="join"
+                    className="meet"
                   >
                     Join Mission
                   </button>

@@ -28,15 +28,15 @@ const Rockets = () => {
   return (
     <div>
       {content}
-      <div className="rocketList">
+      <div className="rockets-all">
         {rockets.map((rocket) => (
-          <div key={rocket.id} className="rocketCard">
+          <div key={rocket.id} className="card-all">
             <img src={rocket.flickr_images[0]} alt="" />
-            <div className="rocketContent">
-              <h3 className="rocketName">{rocket.rocket_name}</h3>
-              <div className="rocketDesc">
+            <div className="card-content">
+              <h4 className="card-name">{rocket.rocket_name}</h4>
+              <div className="disc">
                 <p>
-                  {rocket.active && <span className="status">Reserved</span>}
+                  {rocket.active && <span className="stating">Reserved</span>}
                   {rocket.description}
                 </p>
               </div>

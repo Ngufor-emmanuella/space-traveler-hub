@@ -7,18 +7,18 @@ const MyProfile = () => {
   const tourists = missions.filter((visit) => visit.mission);
   return (
     <div>
-      <h1 className="head-text">My Missions</h1>
-      <table className="tour_list">
-        <tbody className="tour_body">
+      <h2 className="header">My Missions</h2>
+      <table className="touring">
+        <tbody className="tour_all">
           {
             tourists.length < 1 ? (
               <tr>
-                <td className="tour-now tour">No Mission Yet...</td>
+                <td className="tour-first">No Mission Yet...</td>
                 <td><Link to="/missions">Join a Mission</Link></td>
               </tr>
             ) : (
               tourists.map(({ id, name }) => (
-                <tr className="tour" key={id}><td>{name}</td></tr>
+                <tr className="tour-second" key={id}><td>{name}</td></tr>
               ))
             )
           }

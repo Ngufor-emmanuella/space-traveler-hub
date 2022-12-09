@@ -6,16 +6,16 @@ const RocketsProfile = () => {
   const reservedRockets = rockets.filter((rocks) => rocks.active);
 
   return (
-    <div className="profile">
-      <div className="rockets">
-        <h1>My Rockets</h1>
+    <div className="accounts">
+      <div className="machines">
+        <h2>My Rockets</h2>
         {reservedRockets.length === 0 ? (
-          <table className="tour-now tour">
+          <table className="see-all tour">
             <td>No Reservations Made...</td>
-            <td><Link className="reserveRocketsLink" to="/">Make a Reservation</Link></td>
+            <td><Link className="rockets-reserving" to="/">Make a Reservation</Link></td>
           </table>
         ) : (
-          <div className="activeRockets">
+          <div className="movable-rockets">
             <ul>
               {reservedRockets.map((rocket) => (
                 <li key={rocket.id}>{rocket.rocket_name}</li>

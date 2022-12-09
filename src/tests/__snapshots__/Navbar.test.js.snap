@@ -3,24 +3,24 @@
 exports[`renders the navbar component 1`] = `
 <DocumentFragment>
   <header
-    class="header flex"
+    class="head first"
   >
     <div
-      class="logo_div flex"
+      class="logo flex"
     >
       <img
         alt="space travel's logo"
-        class="logo"
+        class="logo-on"
         src="planet.png"
       />
       <h1
-        class="logoText"
+        class="logo-word"
       >
         Space Travellers Hub
       </h1>
     </div>
     <ul
-      class="NavLinks flex"
+      class="Navigation flex"
     >
       <li>
         <a
