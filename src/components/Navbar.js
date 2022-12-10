@@ -3,12 +3,12 @@ import Logo from '../asset/planet.png';
 
 const Navbar = () => (
   <>
-    <header className="header flex">
-      <div className="logo_div flex">
-        <img src={Logo} className="logo" alt="space travel's logo" />
-        <h1 className="logoText">SpaceTrav Hub</h1>
+    <header className="head first">
+      <div className="logo flex">
+        <img src={Logo} className="logo-on" alt="space logo" />
+        <h2 className="logo-word">Space Travellers Hub</h2>
       </div>
-      <ul className="NavLinks flex">
+      <ul className="Navigation flex">
         <li><NavLink to="/">Rockets</NavLink></li>
         <li><NavLink to="/missions">Missions</NavLink></li>
         <li><NavLink to="/my_profile">My Profile</NavLink></li>

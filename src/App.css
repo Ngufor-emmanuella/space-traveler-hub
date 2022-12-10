@@ -1,14 +1,18 @@
-.header {
+.head {
   width: 100%;
   height: 5rem;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 1rem;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 img {
-  max-width: 100%;
-  width: 75px;
+  max-width: 30%;
+  margin-bottom: -1rem;
+}
+
+img.logo-on {
+  max-width: 13%;
 }
 
 .flex {
@@ -16,31 +20,139 @@ img {
   align-items: center;
 }
 
-ul {
+.Navigation {
+  display: flex;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+.Navigation > li > a {
+  padding: 10px;
+  color: rgb(40, 68, 193);
+}
+
+.movable-rockets > ul > li {
   list-style: none;
+  padding: 16px;
+  font-size: 1.5rem;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-.NavLinks {
-  gap: 1.5rem;
-}
-
-.NavLinks li:nth-of-type(2) {
-  border-right: 2px solid rgb(0, 0, 0);
-  padding-right: 1.5rem;
+.Navigation li:nth-child(2) {
+  border-right: 2px solid #525252;
 }
 
 .active {
   padding-bottom: 0.35rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  color: darkcyan;
 }
 
-.container {
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 80%;
+  gap: 1rem;
   margin: 4rem auto;
+}
+
+.rocket-all {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  padding: 5%;
+}
+
+.card-all {
+  display: flex;
+  justify-content: flex-start;
+  width: 95%;
+  margin: auto;
+  border-radius: 8px;
+  gap: 22px;
+}
+
+.card-content {
+  padding: 5%;
+}
+
+.card-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.disc {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.reserve {
+  background-color: rgb(40, 68, 193);
+  color: #fff;
+  border: none;
+  padding: 5px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.cancel {
+  border: solid 1px rgb(128, 128, 128);
+  padding: 5px 16px;
+  border-radius: 5px;
+  color: rgb(128, 128, 128);
+  cursor: pointer;
+}
+
+.cancel:hover {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .card-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rocket-img {
+    width: 90%;
+    border-radius: 20px;
+  }
+}
+
+.stating {
+  background-color: rgb(72, 179, 221);
+  border-radius: 3px;
+  padding: 2px;
+  margin-right: 5px;
+}
+
+.description {
+  text-align: justify;
+  padding: 10px;
+  font-size: 15px;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}
+
+.movable-rockets :nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.machines td {
+  width: 74.3%;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.rockets-reserving {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .Navigation {
+    display: flex;
+    list-style-type: none;
+    float: right;
+  }
 }
