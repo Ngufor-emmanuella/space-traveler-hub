@@ -4,28 +4,28 @@ tr:nth-child(even) {
 
 tbody.tour_all td {
   padding: 15px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 #tab td:nth-child(3),
 #tab td:nth-child(4) {
   text-align: center;
-  width: 15%;
+  width: 13%;
 }
 
 #tab td:nth-child(2) {
-  width: 60%;
-  padding: 20px;
+  width: 68%;
+  padding: 24px;
 }
 
 #tab tbody td:nth-child(1) {
-  width: 10%;
-  padding: 8px;
+  width: 12%;
+  padding: 9px;
 }
 
 #tab {
-  width: 95%;
-  margin: 60px auto;
+  width: 92%;
+  margin: 58px auto;
 }
 
 table.touring {
@@ -37,11 +37,14 @@ thead {
 }
 
 .meet {
-  padding: 5px 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: transparent;
-  border-color: rgb(48, 46, 46);
+  border-color: rgb(58, 56, 56);
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
@@ -49,16 +52,16 @@ thead {
   padding: 0.5rem;
   text-align: center;
   border-radius: 4px;
-  border: 2px solid red;
-  background-color: #fff;
-  color: red;
+  border: 2px solid rgb(240, 22, 22);
+  background-color: rgb(226, 219, 219);
+  color: rgb(212, 11, 11);
 }
 
 .member {
-  background-color: rgb(123, 122, 122);
-  color: #fff;
-  padding: 0.2rem;
-  border-radius: 4px;
+  background-color: rgb(139, 132, 132);
+  color: rgb(230, 216, 216);
+  padding: 0.4rem;
+  border-radius: 6px;
   border: transparent;
 }
 
@@ -66,9 +69,9 @@ thead {
   color: #fff;
   padding: 0.2rem;
   border-radius: 4px;
-  background-color: rgb(63, 115, 194);
+  background-color: rgb(45, 115, 219);
 }
 
 td.tour-first {
-  width: 80%;
+  width: 78%;
 }
